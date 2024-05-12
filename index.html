@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- divinectorweb.com -->
+<head>
+    <meta charset="UTF-8">
+    <title>How to Create responsive Homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">       
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+            </div>
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+             </div>
+        <div class="banner-text">
+            <h1>Explore <span>Music</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla est nobis tempore molestiae</p>
+            <a href="#">Contact US</a>
+        </div>
+    </header>
+    <script>
+        // JavaScript function to change the background color
+        function changeBackgroundColor() {
+            const body = document.body;
+            const currentColor = getComputedStyle(body).getPropertyValue('background-color');
+            
+            // Define an array of background colors
+            const colors = ['#0c0c0c', '#333', '#555', '#990000', '#006600', '#000099'];
+            
+            // Get the current color index
+            const currentIndex = colors.indexOf(currentColor);
+            
+            // Calculate the next color index, looping back to the start if necessary
+            const nextIndex = (currentIndex + 1) % colors.length;
+            
+            // Set the new background color
+            body.style.backgroundColor = colors[nextIndex];
+        }
+    </script>
+</body>
+</html>
